@@ -1,10 +1,13 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+import img from './earthquake.png'
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 
- const mapStyles = {
+const mapStyles = {
 	width: '35%',
 	height: '100%'
-}
+};
+
+let image = "./earthquake.png";
 
 class Maps extends Component {
   render() {
@@ -19,6 +22,7 @@ class Maps extends Component {
           {this.props.earthquakes.map((item, i) => {
             return (
               <Marker
+              	icon={img}
                 title={item.properties.title}
                 key={i}
                 position={{
