@@ -7,8 +7,6 @@ const mapStyles = {
 	height: '100%'
 };
 
-let image = "./earthquake.png";
-
 class Maps extends Component {
   render() {
     return (
